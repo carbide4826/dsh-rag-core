@@ -1,0 +1,27 @@
+{
+  "name": "dsh-rag-core",
+  "version": "0.1.0",
+  "description": "本地 RAG 索引层库:chunks.jsonl+FTS 起步,Provider 可插拔,增量索引",
+  "type": "module",
+  "author": "fangyan",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsdown": "^0.23.0",
+    "typescript": "^5.6.0"
+  }
+}
